@@ -1,10 +1,6 @@
 """
 Data loading and preprocessing for SepSpace experiments.
 Supports: USTC-TFC2016, MCFP, ISCX-VPN, ISCX-nonVPN.
-Includes preprocessing cache to avoid repeated PCAP parsing.
-
-Cache layout: data/preprocessed/{dataset_key}/features.npy, labels.npy,
-              class_stats.json, meta.json
 """
 
 import os
