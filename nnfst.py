@@ -5,10 +5,7 @@ Adaptation of NFST for open-set recognition without novel-class prior.
 Only known-class training embeddings are used to build per-class subspaces.
 Novelty score = minimum reconstruction error across all known-class subspaces.
 
-Reference: Zhang et al., "Towards Open Set Deep Networks" (adapted).
-Adaptation: remove novel-class null-space; use known-class within-class scatter
-            subspace only. Test sample is novel if its min reconstruction error
-            across all K subspaces exceeds a calibrated threshold.
+Reference: Zhang et al., "Towards Open Set Deep Networks" .
 """
 
 import numpy as np
